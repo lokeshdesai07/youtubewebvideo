@@ -30,6 +30,6 @@
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   var s = document.getElementById('thisIframe');
-  s.src = `https://www.youtube.com/embed/${urlParams.get('videoId')}?rel=0&enablejsapi=1&playsinline=1&showInfo=0&controls=1&fullscreen=1`;
+  s.src = `https://www.youtube.com/embed/${urlParams.get('videoId')}?autoplay=1&controls=1&color=ffffff&fs=0&loop=1&&playlist=${urlParams.get('videoId')}&modestbranding=1&rel=0`;
 </script>
 </html>
